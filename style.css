@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor-daniel:hsl(263, 55%, 52%);
+    --cor-jonathan: hsl(217, 19%, 35%);
+    --cor-patrick: hsl(219, 29%, 14%);
+    --branco:hsl(0, 0%, 100%);
+    --cinza:hsl(217, 19%, 35%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed',sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 81%);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    'daniel daniel jonathan kira'
+    'jeanette patrick patrick kira';
+    justify-content: center;
+}
+
+section{
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+img{
+    border-radius: 50%;
+    scale: 0.7;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    font-size: 13px;
+}
+
+.paragrafos{
+    line-height: 10px;
+    padding: 10px;
+}
+
+.paragrafos p:nth-child(1){
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Verified{
+    opacity: 50%;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.texto p{
+    font-size: 13px;
+    opacity: 70%;
+    padding: 10px 0;
+}
+
+#daniel{
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-color: var(--cor-daniel);
+    color: var(--branco);
+    grid-area: daniel;
+}
+
+#daniel img{
+    border: 2px solid hsl(263, 79%, 68%) ;
+}
+
+#daniel .texto p{
+    width: 94%;
+}
+
+#Jonathan{
+    background-color: var(--cor-jonathan);
+    color: var(--branco);
+    grid-area: jonathan;
+}
+
+#Jonathan .texto p{
+    width: 85%;
+}
+
+#Jeanette{
+    background-color: var(--branco);
+    color: var(--cinza);
+    grid-area: jeanette;
+}
+
+
+#Jeanette .texto{
+    width: 85%;
+}
+
+#Patrick{
+    background-color: var(--cor-patrick);
+    color: var(--branco);
+    grid-area: patrick;
+}
+
+#Patrick img{
+    border: 2px solid var(--cor-daniel);
+}
+
+#Patrick .texto p{
+    width: 90%;
+}
+
+#kira{
+    background-color: var(--branco);
+    color: var(--cinza);
+    grid-area:kira;
+}
+
+#kira .texto p{
+    width: 90%;
+}
