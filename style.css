@@ -26,6 +26,7 @@ main {
     'daniel daniel jonathan kira'
     'jeanette patrick patrick kira';
     justify-content: center;
+    margin-top: 5%;
 }
 
 section{
@@ -134,4 +135,15 @@ h1{
 
 #kira .texto p{
     width: 90%;
+}
+
+@media all and (max-width:1300px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section{
+        width: 100%;
+    }
 }
