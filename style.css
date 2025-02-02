@@ -33,6 +33,7 @@ section{
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
+    box-shadow: 2px 5px 9px rgb(185, 185, 185);
 }
 
 header{
